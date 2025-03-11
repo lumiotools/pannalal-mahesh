@@ -75,7 +75,7 @@ const sections = [
   }
 ];
 
-export default function Index() {
+export default function Page() {
   const [scrollProgress, setScrollProgress] = useState(0);
   const [activeSection, setActiveSection] = useState("home");
   const mainRef = useRef<HTMLDivElement>(null);
