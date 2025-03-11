@@ -20,42 +20,24 @@ export default function LogoSection({ isHome = false }: LogoSectionProps) {
   return (
     <>
       <div
-        className={`${
-          isHome ? "bg-white" : "bg-white"
-        } py-3 sm:py-4 md:py-5 px-4 sm:px-6 md:px-8 flex items-center justify-between rounded-br-2xl sm:rounded-br-3xl ${
-          !isHome && "shadow-md sm:shadow-lg md:shadow-xl"
+        className={`${isHome ? "bg-white" : "bg-white"} py-4 px-6 flex items-center justify-between rounded-br-2xl ${
+          !isHome && "shadow-md"
         }`}
       >
         <div className="flex items-center">
           <Link href={"/"} className="flex items-center">
-            <Image
-              src="/logo.png"
-              alt="Pannalal"
-              width={160}
-              height={80}
-              className="h-8 sm:h-9 md:h-10 w-auto"
-              priority
-              sizes="(max-width: 640px) 120px, (max-width: 768px) 140px, 160px"
-            />
+            <Image src="/logo.png" alt="Pannalal" width={160} height={80} className="h-9 w-auto" priority />
           </Link>
-          <div
-            className={`border-l h-6 sm:h-8 md:h-10 mx-3 sm:mx-4 ${isHome ? "border-gray-400" : "border-gray-200"}`}
-          ></div>
+          <div className={`border-l h-8 mx-4 ${isHome ? "border-gray-400" : "border-gray-200"}`}></div>
         </div>
 
         <button
           onClick={toggleMenu}
-          className={`flex items-center sm:items-start flex-row sm:flex-col font-medium ${
-            isHome ? "text-gray-800" : "text-blue-900"
-          }`}
+          className={`flex items-start flex-col font-medium ${isHome ? "text-gray-800" : "text-blue-900"}`}
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
         >
-          {isMenuOpen ? (
-            <X className="h-6 w-6 sm:h-7 sm:w-7 md:h-8 md:w-8" color="black" />
-          ) : (
-            <Menu className="h-6 w-6 sm:h-7 sm:w-7 md:h-8 md:w-8" color="black" />
-          )}
-          <span className="text-xs sm:text-sm text-black ml-1 sm:ml-0">{isMenuOpen ? "CLOSE" : "MENU"}</span>
+          {isMenuOpen ? <X className="h-7 w-7" color="black" /> : <Menu className="h-7 w-7" color="black" />}
+          <span className="text-sm text-black ml-1">{isMenuOpen ? "CLOSE" : "MENU"}</span>
         </button>
       </div>
 

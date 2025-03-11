@@ -37,7 +37,7 @@ export default function PolymerProductsSection() {
   return (
     <section
       id="polymer-products"
-      className="min-h-screen py-12 sm:py-16 md:py-20 snap-start bg-gray-100 flex flex-col justify-center relative"
+      className="min-h-screen py-12 sm:py-16 md:py-20 snap-start bg-[#E1CFA6] flex flex-col justify-center relative"
     >
       <motion.div
         className="container max-w-6xl mx-auto px-4 sm:px-6 md:px-8"
@@ -86,7 +86,7 @@ export default function PolymerProductsSection() {
             variants={staggerContainer}
           >
             <motion.div
-              className="bg-white rounded shadow overflow-hidden aspect-square"
+              className="bg-white  shadow overflow-hidden aspect-square"
               variants={slideUp}
               whileHover={{ y: -5, transition: { duration: 0.2 } }}
             >
@@ -100,7 +100,7 @@ export default function PolymerProductsSection() {
               />
             </motion.div>
             <motion.div
-              className="bg-white rounded shadow overflow-hidden aspect-square"
+              className="bg-white  shadow overflow-hidden aspect-square"
               variants={slideUp}
               whileHover={{ y: -5, transition: { duration: 0.2 } }}
             >
@@ -114,7 +114,7 @@ export default function PolymerProductsSection() {
               />
             </motion.div>
             <motion.div
-              className="bg-white rounded shadow overflow-hidden aspect-square sm:col-span-2 lg:col-span-1"
+              className="bg-white  shadow overflow-hidden aspect-square sm:col-span-2 lg:col-span-1"
               variants={slideUp}
               whileHover={{ y: -5, transition: { duration: 0.2 } }}
             >

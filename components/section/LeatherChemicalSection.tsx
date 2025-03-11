@@ -37,7 +37,7 @@ export default function LeatherChemicalsSection() {
   return (
     <section
       id="leather-chemicals"
-      className="min-h-screen py-12 sm:py-16 md:py-20 snap-start bg-gray-100 flex flex-col justify-center relative"
+      className="min-h-screen py-12 sm:py-16 md:py-20 snap-start bg-[#E1CFA6] flex flex-col justify-center relative"
     >
       <motion.div
         className="container max-w-6xl mx-auto px-4 sm:px-6 md:px-8"
@@ -67,7 +67,7 @@ export default function LeatherChemicalsSection() {
                 alt="Pan East Logo"
                 width={160}
                 height={160}
-                className="w-full h-full object-contain rounded"
+                className="w-full h-full object-contain"
                 sizes="(max-width: 640px) 128px, 160px"
               />
             </motion.div>
@@ -93,7 +93,7 @@ export default function LeatherChemicalsSection() {
             ].map((image, index) => (
               <motion.div
                 key={index}
-                className="bg-white rounded shadow overflow-hidden aspect-square"
+                className="bg-white  shadow overflow-hidden aspect-square"
                 variants={slideUp}
                 whileHover={{ y: -5, transition: { duration: 0.2 } }}
               >

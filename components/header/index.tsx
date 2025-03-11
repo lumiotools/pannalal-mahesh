@@ -33,7 +33,7 @@ export default function Header({
   }, [scrolled]);
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 w-full duration-300 ${
+      className={`fixed top-[-5] left-0 right-0 z-50 w-full duration-300 ${
         isHome && !scrolled ? "bg-transparent" : "bg-transparent"
       }`}
     >

@@ -37,7 +37,7 @@ export default function BullionSection() {
 //   }
 
   return (
-    <section  id="bullion"className="h-screen snap-start bg-gray-100 flex flex-col justify-center relative">
+    <section  id="bullion"className="h-screen snap-start bg-[#E1CFA6] flex flex-col justify-center relative">
       <motion.div
         className="container max-w-6xl mx-auto px-4"
         initial="hidden"

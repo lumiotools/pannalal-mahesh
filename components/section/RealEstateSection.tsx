@@ -37,7 +37,7 @@ export default function RealEstateSection() {
   return (
     <section
       id="real-estate"
-      className="min-h-screen snap-start px-4 sm:px-10 py-16 bg-gray-100 flex flex-col justify-center relative"
+      className="min-h-screen snap-start px-4 sm:px-10 py-16 bg-[#E1CFA6] flex flex-col justify-center relative"
     >
       <motion.div
         className="container mx-auto"
@@ -63,7 +63,7 @@ export default function RealEstateSection() {
               variants={slideUp}
             >
               <motion.div
-                className="w-32 h-32 sm:w-40 sm:h-40 flex-shrink-0 bg-white p-3 rounded-lg shadow-sm"
+                className="w-32 h-32 sm:w-40 sm:h-40 flex-shrink-0 bg-white p-3  shadow-sm"
                 whileHover={{ scale: 1.05, transition: { duration: 0.2 } }}
               >
                 <Image
@@ -88,7 +88,7 @@ export default function RealEstateSection() {
               {["/con1.png", "/con2.png", "/cn3.png"].map((src, index) => (
                 <motion.div
                   key={index}
-                  className="aspect-video bg-white rounded-lg shadow-md overflow-hidden"
+                  className="aspect-video bg-white  shadow-md overflow-hidden"
                   variants={slideUp}
                   whileHover={{ y: -5, transition: { duration: 0.2 } }}
                 >
@@ -122,7 +122,7 @@ export default function RealEstateSection() {
               variants={slideUp}
             >
               <motion.div
-                className="w-32 h-32 sm:w-40 sm:h-40 flex-shrink-0 bg-white p-3 rounded-lg shadow-sm"
+                className="w-32 h-32 sm:w-40 sm:h-40 flex-shrink-0 bg-white p-3 shadow-sm"
                 whileHover={{ scale: 1.05, transition: { duration: 0.2 } }}
               >
                 <Image
@@ -146,7 +146,7 @@ export default function RealEstateSection() {
                 variants={staggerContainer}
               >
                 <motion.div
-                  className="aspect-video bg-white rounded-lg shadow-md overflow-hidden"
+                  className="aspect-video bg-white shadow-md overflow-hidden"
                   variants={slideUp}
                   whileHover={{ y: -5, transition: { duration: 0.2 } }}
                 >
@@ -161,7 +161,7 @@ export default function RealEstateSection() {
                   </div>
                 </motion.div>
                 <motion.div
-                  className="aspect-video bg-white rounded-lg shadow-md overflow-hidden"
+                  className="aspect-video bg-white  shadow-md overflow-hidden"
                   variants={slideUp}
                   whileHover={{ y: -5, transition: { duration: 0.2 } }}
                 >
@@ -176,7 +176,7 @@ export default function RealEstateSection() {
                   </div>
                 </motion.div>
                 <motion.div
-                  className="aspect-video bg-white rounded-lg shadow-md overflow-hidden"
+                  className="aspect-video bg-white shadow-md overflow-hidden"
                   variants={slideUp}
                   whileHover={{ y: -5, transition: { duration: 0.2 } }}
                 >

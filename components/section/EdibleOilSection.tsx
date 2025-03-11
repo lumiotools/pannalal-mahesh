@@ -35,7 +35,7 @@ export default function EdibleOilSection() {
   return (
     <section
       id="edible-oil"
-      className="min-h-screen py-12 sm:py-16 md:py-20 snap-start bg-gray-100 flex flex-col justify-center relative overflow-hidden"
+      className="min-h-screen py-12 sm:py-16 md:py-20 snap-start bg-[#E1CFA6] flex flex-col justify-center relative overflow-hidden"
     >
       {/* Background pattern - simplified */}
       <div
@@ -56,7 +56,7 @@ export default function EdibleOilSection() {
       >
         {/* Industry Name */}
         <motion.h2
-          className="text-xl sm:text-2xl md:text-3xl font-semibold mb-4 sm:mb-6 text-center md:text-left"
+          className="text-xl sm:text-2xl md:text-3xl font-semibold mb-4 sm:mb-6 text-left"
           variants={slideUp}
         >
           VAIBHAV EDIBLES PRIVATE LIMITED
@@ -76,7 +76,7 @@ export default function EdibleOilSection() {
                 alt="Vaibhav Edibles Logo"
                 width={160}
                 height={160}
-                className="w-full h-full object-contain rounded"
+                className="w-full h-full object-contain"
                 sizes="(max-width: 640px) 128px, 160px"
               />
             </motion.div>
@@ -103,7 +103,7 @@ export default function EdibleOilSection() {
             ].map((image, index) => (
               <motion.div
                 key={index}
-                className="rounded shadow overflow-hidden aspect-square"
+                className="shadow overflow-hidden aspect-square"
                 variants={slideUp}
                 whileHover={{ y: -5, transition: { duration: 0.2 } }}
               >
